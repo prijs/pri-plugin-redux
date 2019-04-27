@@ -1,0 +1,46 @@
+{
+  "name": "pri-plugin-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "iron-redux": "^0.2.2",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "pri": "^2.1.9"
+  },
+  "scripts": {
+    "test": "pri test",
+    "start": "pri dev",
+    "docs": "pri docs",
+    "build": "pri build",
+    "bundle": "pri bundle",
+    "preview": "pri preview",
+    "analyse": "pri analyse",
+    "format": "eslint --fix './?(src|docs|tests)/**/*.?(ts|tsx)'",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prijs/pri-plugin-redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prijs/pri-plugin-redux/issues"
+  },
+  "homepage": "https://github.com/prijs/pri-plugin-redux#readme",
+  "peerDependencies": {},
+  "pri": {
+    "type": "plugin"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "types": "src/index.ts"
+}
